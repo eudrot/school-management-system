@@ -7,5 +7,5 @@ RUN composer install --no-dev
 RUN touch database/database.sqlite
 RUN php artisan key:generate
 RUN php artisan migrate --force
-EXPOSE 1000
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=1000"]
+EXPOSE 10000
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=10000"]
